@@ -1,1 +1,20 @@
-2017-12-19
+该文档为Redis官网的使用辅导教程
+	链接如下：http://try.redis.io/
+
+Welcome to Try Redis, a demonstration of the Redis database!
+Please type TUTORIAL to begin a brief tutorial, HELP to see a list of supported commands,
+or any valid Redis command to play with the database.
+## 欢迎来到Redis试用，一个Redis的数据库样例，请用键盘输入 TUTORIAL 来开启一段简短的教程，输入 HELP 去查看一系列支持的命令 或者说使用任何
+Redis 所支持的命令在次数据库上实验。
+
+Redis is what is called a key-value store, often referred to as a NoSQL database.
+The essence of a key-value store is the ability to store some data, called a value, inside a key.
+This data can later be retrieved only if we know the exact key used to store it. 
+We can use the command SET to store the value "fido" at key "server:name":
+    SET server:name "fido"
+Redis will store our data permanently, so we can later ask "What is the value stored at key server:name?" 
+and Redis will reply with "fido":
+
+
+    GET server:name => "fido"
+Tip: You can click the commands above to automatically execute them. The text after the arrow (=>) shows the expected output.
